@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.businesrulesapp.MainActivity"
+    android:background="#ffffff">
+
+    <Button
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comienza Aquí"
+        android:id="@+id/button"
+        android:onClick="mostrar"
+        android:layout_marginTop="54dp"
+        android:textSize="16sp"
+        android:background="@color/accent_material_dark"
+        android:padding="16dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/bluemix"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/hotel2"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:layout_below="@+id/button" />
+
+</RelativeLayout>

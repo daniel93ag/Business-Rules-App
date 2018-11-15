@@ -1,0 +1,85 @@
+{
+"Quito":[
+  {
+    "name": "Hotel Quito",
+    "city": "Quito",
+    "standardRate": 200
+  },
+  {
+    "name": "Hilton Colon",
+    "city": "Quito",
+    "standardRate": 180
+  },
+  {
+    "name": "Marriot",
+    "city": "Quito",
+    "standardRate": 300
+  },
+  {
+    "name": "Hotel Oro Verde",
+    "city": "Quito",
+    "standardRate": 120
+  },
+  {
+    "name": "Swisshotel",
+    "city": "Quito",
+    "standardRate": 350
+  },
+  {
+    "name": "Dann Carlton",
+    "city": "Quito",
+    "standardRate": 300
+  }],
+"Guayaquil":[
+  {
+    "name": "Guayaquil",
+    "city": "Guayaquil",
+    "standardRate": 360
+  },
+  {
+    "name": "Hilton Colon",
+    "city": "Guayaquil",
+    "standardRate": 220
+  },
+  {
+    "name": "Marriot",
+    "city": "Guayaquil",
+    "standardRate": 200
+  },
+  {
+    "name": "Oro Verde",
+    "city": "Guayaquil",
+    "standardRate": 290
+  },
+  {
+    "name": "Pacífico",
+    "city": "Guayaquil",
+    "standardRate": 240
+  }],
+"Cuenca":[
+  {
+    "name": "Cuenca",
+    "city": "Cuenca",
+    "standardRate": 260
+  },
+  {
+    "name": "Bombuscaro",
+    "city": "Cuenca",
+    "standardRate": 300
+  },
+  {
+    "name": "Hotel NH",
+    "city": "Cuenca",
+    "standardRate": 190
+  },
+  {
+    "name": "Hotel Exe",
+    "city": "Cuenca",
+    "standardRate": 380
+  },
+  {
+    "name": "Torremangana",
+    "city": "Cuenca",
+    "standardRate": 120
+  }]
+}

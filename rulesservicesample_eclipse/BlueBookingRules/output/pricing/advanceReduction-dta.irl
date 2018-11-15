@@ -1,0 +1,59 @@
+// begin DT advanceReduction
+// -- begin rule 'advanceReduction 0'
+package pricing {
+   rule advanceReduction_0 {
+      property ilog.rules.business_name = "advanceReduction 1";
+      property ilog.rules.dt = "pricing.advanceReduction";
+      property ilog.rules.group = "pricing.advanceReduction";
+      property ilog.rules.package_name = "pricing";
+      property status = "new";
+      when {
+         com.ibm.bluebooking.Result() from result;
+         evaluate (((result.daysAhead > 7)));
+      } then {
+         result.rate = (float)(hotel.standardRate * ((float)(100 - 30)) / 100);
+         result.addMessage("Hay una oferta de una reducción del 30% en tu pago!");
+      }
+   }
+}
+
+// -- end rule 'advanceReduction 0'
+// -- begin rule 'advanceReduction 1'
+package pricing {
+   rule advanceReduction_1 {
+      property ilog.rules.business_name = "advanceReduction 2";
+      property ilog.rules.dt = "pricing.advanceReduction";
+      property ilog.rules.group = "pricing.advanceReduction";
+      property ilog.rules.package_name = "pricing";
+      property status = "new";
+      when {
+         com.ibm.bluebooking.Result() from result;
+         evaluate (((result.daysAhead in [2, 7])));
+      } then {
+         result.rate = (float)(hotel.standardRate * ((float)(100 - 0)) / 100);
+         result.addMessage("Los mejores precios garantizados en nuestro hotel!");
+      }
+   }
+}
+
+// -- end rule 'advanceReduction 1'
+// -- begin rule 'advanceReduction 2'
+package pricing {
+   rule advanceReduction_2 {
+      property ilog.rules.business_name = "advanceReduction 3";
+      property ilog.rules.dt = "pricing.advanceReduction";
+      property ilog.rules.group = "pricing.advanceReduction";
+      property ilog.rules.package_name = "pricing";
+      property status = "new";
+      when {
+         com.ibm.bluebooking.Result() from result;
+         evaluate (((result.daysAhead in [0, 1])));
+      } then {
+         result.rate = (float)(hotel.standardRate * ((float)(100 - 50)) / 100);
+         result.addMessage("Oferta de ultimo momento! 50% dscto en tu pago solo hoy!");
+      }
+   }
+}
+
+// -- end rule 'advanceReduction 2'
+// end DT advanceReduction

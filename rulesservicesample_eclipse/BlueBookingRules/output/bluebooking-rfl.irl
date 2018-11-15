@@ -1,0 +1,30 @@
+
+flowtask bluebooking {
+  property mainflowtask = true;
+  property ilog.rules.business_name = "bluebooking";
+  property ilog.rules.package_name = "";
+  body {
+    bluebooking#initReservation;
+    bluebooking#pricing;
+  }
+};
+
+ruletask bluebooking#pricing {
+  property ilog.rules.business_name = "bluebooking>pricing";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    pricing.*
+  }
+};
+
+functiontask bluebooking#initReservation {
+  property ilog.rules.business_name = "bluebooking>initReservation";
+  property ilog.rules.package_name = "";
+  body {
+    result = new com.ibm.bluebooking.Result(hotel, checkin, checkout);
+  }
+};
+
