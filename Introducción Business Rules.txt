@@ -1,0 +1,44 @@
+Empezando con el servicio Business Rules de Bluemix:
+
+**********************************************************
+Este servicio habilita a los desarroladores a gastar menos
+tiempo registrando y probando las aplicaciones cuando la 
+política de la empresa cambia. 
+
+Ayuda a minimizar los cambios del código manteniendo la 
+lógica del negocio separada de la lógica de la aplicación.
+**********************************************************
+
+- Para crear las reglas se necesita instalar localmente 
+el Diseñador de Reglas (Rule Designer) en Eclipse Juno.
+
+- Es una herramienta de creación de reglas basada en Eclipse
+Juno 4.2.2 para iniciar proyectos de reglas de negocio.
+
+- El diseñador de reglas se usa para definir el Objeto modelo
+(Object Model) en Java o XML para modelar una decisión y
+autorizar las reglas que implementan esa decisión.
+
+Desde el Diseñador de Reglas (RuleDesigner) despliega estos
+conjuntos de reglas y su asociada RuleApp a una instancia del
+servicio Business Rules en Bluemix.
+
+- Se usará una configuración del Rule Execution Server para
+hacer una conexión entre tu PC y el servicio en Bluemix para
+desplegar la RuleApp.
+
+- Ahora se puede desplegar multiples versiones de la RuleApp
+mediante el Rule Execution Server Configurado con las 
+credenciales del servicio en Bluemix.
+
+- Enlaza el servicio a tu aplicación
+
+- Para llamar el servicio desde la aplicación puede hacerse
+bajo Servicios Web SOAP/XML, REST/XML, REST/JSON, los datos
+entrantes vienen como un contexto HTTP en XML o JSON.
+
+La invocación REST/JSON soporta un Execution Object Model 
+(XOM) basado en Java.
+
+Se puede llamar al servicio desde cualquier cliente enlazado,
+se puede usar Liberty for Java, Node.js, Ruby on Rails.
